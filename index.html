@@ -1,0 +1,48 @@
+<!-- https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Utiliser_les_promesses -->
+<html>
+
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+  >
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script src="./base.js"></script>
+  <link
+    rel="stylesheet"
+    href="./base.css"
+  >
+</head>
+
+<body onload="changeDisplay('Click on something !'); changeDisplay('');">
+  <div>
+    <button
+      class="btn spacing"
+      onclick="actionWITHAwait();"
+    >Action WITH await</button>
+
+    <button
+      class="btn spacing"
+      onclick="actionWITHOUTAwait();"
+    >Action WITHOUT await</button>
+
+    <button
+      class="btn spacing"
+      onclick="actionWithERROR();"
+    >Action with ERROR</button>
+  </div>
+  <hr />
+  <div>
+
+    <button
+      class="btn spacing"
+      onclick="cleanMessages();"
+    >Clean messages</button>
+
+    <span id="display"></span>
+  </div>
+
+</body>
+
+</html>
