@@ -1,5 +1,5 @@
 # promise-example
-Simple example to show how work the Promises
+Simple example to show how the Promises work
 
 # Usage
 Open in a browser the [index.html](./index.html)
